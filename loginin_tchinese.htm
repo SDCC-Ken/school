@@ -1,0 +1,85 @@
+﻿<html>
+<head>
+<title>Login</title>
+<script language="JavaScript">
+function MM_displayStatusMsg(msgStr) { 
+status=msgStr;
+document.MM_returnValue = true;
+}
+function click() {
+if (event.button==2) {
+alert('版權所有請勿複製');
+}
+}
+document.onmousedown=click
+function MM_openBrWindow(theURL,winName,features) { 
+window.open(theURL,winName,features);
+}
+</script>
+<style type="text/css">
+.style9 {
+	color: #FF0000;
+	font-size: x-large;
+}
+body {
+	background-image: url();
+}
+.style12 {font-size: xx-large}
+.style13 {color: #FF0000; font-size: xx-large; }
+#apDiv1 {
+	position:absolute;
+	left:1px;
+	top:1px;
+	width:584px;
+	height:408px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:69px;
+	top:104px;
+	width:297px;
+	height:630px;
+	z-index:2;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+<div id="apDiv1"><img src="picture/background10.jpg" width="1024" height="768"></div>
+<div id="apDiv2"><p align="center" style="width: 915px"><span class="style13">登入</span><span class="style13" style="width: 915px"><img src="picture/line (11).gif" width="893" height="15"></span></p>
+<p align="center" class="style13" style="width: 915px"><marquee>E-learner歡迎你來到English Valley</marquee></p>
+<p align="left" class="style13">帳號:<input type="text" name="login"></p>
+<p align="left" class="style9"> <span class="style12">
+<script>
+function passWord() {   
+var testV = 1;   
+var pass1 = prompt('請輸入您的密碼!',' ');   
+while (testV < 3) {   
+if (!pass1)    
+history.go(-1);   
+if (pass1.toLowerCase() == "demo01") {   
+alert('您輸入正確您可以输入您的。');   
+window.open('afterlogindemo.html');   
+break;   
+}
+if (pass1.toLowerCase() != "demo01") {   
+alert('您輸入正確!賬戶您可以進入試玩頁面');   
+window.open('afterloginhomepage.html');   
+break;   
+} 
+testV+=1;   
+var pass1 =    
+prompt('拒絕您的密碼 - 請在重新輸入一次!!.','Password');   
+}   
+if (pass1.toLowerCase()!="password" & testV ==3)    
+history.go(-1);   
+return " ";   
+}    
+</script>   
+<div align="center">   
+<input type="button" value="Login" onClick="passWord()">     
+</div>   </span>
+</form>  
+<div align="center">若需要試玩帳戶,請<a href="trytoplay_tchinese.html">按此</a></div>
+</body>
+</html>

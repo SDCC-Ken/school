@@ -1,0 +1,85 @@
+﻿<html>
+<head>
+<title>Login</title>
+<script language="JavaScript">
+function MM_displayStatusMsg(msgStr) { 
+status=msgStr;
+document.MM_returnValue = true;
+}
+function click() {
+if (event.button==2) {
+alert('版权所有请勿复制');
+}
+}
+document.onmousedown=click
+function MM_openBrWindow(theURL,winName,features) { 
+window.open(theURL,winName,features);
+}
+</script>
+<style type="text/css">
+.style9 {
+	color: #FF0000;
+	font-size: x-large;
+}
+body {
+	background-image: url();
+}
+.style12 {font-size: xx-large}
+.style13 {color: #FF0000; font-size: xx-large; }
+#apDiv1 {
+	position:absolute;
+	left:1px;
+	top:1px;
+	width:584px;
+	height:408px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:69px;
+	top:104px;
+	width:297px;
+	height:630px;
+	z-index:2;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+<div id="apDiv1"><img src="picture/background10.jpg" width="1024" height="768"></div>
+<div id="apDiv2"><p align="center" style="width: 915px"><span class="style13">登入</span><span class="style13" style="width: 915px"><img src="picture/line (11).gif" width="893" height="15"></span></p>
+<p align="center" class="style13" style="width: 915px"><marquee>E-learner欢迎你来到English Valley</marquee></p>
+<p align="left" class="style13">账号:<input type="text" name="login"></p>
+<p align="left" class="style9"> <span class="style12">
+<script>   
+function passWord() {   
+var testV = 1;   
+var pass1 = prompt('请输入您的密码!',' ');   
+while (testV < 3) {   
+if (!pass1)    
+history.go(-1);   
+if (pass1.toLowerCase() == "demo01") {   
+alert('您输入正确!');   
+window.open('afterlogindemo.html');   
+break;   
+}
+if (pass1.toLowerCase() != "demo01") {   
+alert('您输入正确!');   
+window.open('afterloginhomepage.html');   
+break;   
+} 
+testV+=1;   
+var pass1 =    
+prompt('拒绝您的密码 - 请在重新输入一次!!.','Password');   
+}   
+if (pass1.toLowerCase()!="password" & testV ==3)    
+history.go(-1);   
+return " ";   
+}    
+</script>   
+<div align="center">   
+<input type="button" value="Login" onClick="passWord()">     
+</div>   
+</form>  
+<div align="center">若需要试玩帐户，请<a href="trytoplay_schinese.html" target="_blank">按此</a></div>
+</body>
+</html>
